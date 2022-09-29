@@ -6,8 +6,10 @@ On terminal:
 
 ##[alias]
 ---
-## s = !git status -s
-## c = !git commit -m
-## ps = !git push origin
-## pl = !git pull origin
-## l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s -%C(cyan)%cn, %C(green)%cr'
+### s = !git status -s
+### c = !git commit -m
+### psh = !git push origin
+### pll = !git pull origin
+### check = !git checkout
+### create = !git checkout -b
+### l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s -%C(cyan)%cn, %C(green)%cr'
