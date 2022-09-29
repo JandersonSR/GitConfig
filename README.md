@@ -1,5 +1,9 @@
 # GitConfig
 
+On terminal: 
+1º git config --global core.editor code
+2º git config --global --edit
+
 ##[alias]
 ---
 ## s = !git status -s
