@@ -1,8 +1,15 @@
 # CUSTOM GitConfig commands
 
-On terminal: 
-  - git config --global core.editor code      //*change vscode to your gitconfig editor
-  - git config --global --edit               //*open vscode gitconfig editor
+
+
+Open your terminal and do the following: 
+// 1* *change vscode to your gitconfig editor
+---
+  - git config --global core.editor code 
+   
+ //2* *open vscode gitconfig editor 
+ ---
+  - git config --global --edit               
 
 //*create an alias just like the example*/
 
