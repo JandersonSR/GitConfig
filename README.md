@@ -4,11 +4,11 @@
 
 Open your terminal and do the following:
 
-//change vscode to your gitconfig editor
+[change vscode to your gitconfig editor]
 ---
   - git config --global core.editor code 
    
-//open vscode gitconfig editor 
+[open vscode gitconfig editor]
  ---
   - git config --global --edit               
 
