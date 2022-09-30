@@ -1,29 +1,33 @@
 # CUSTOM GitConfig commands
 
-
-
-Open your terminal and do the following:
+First open your terminal and do the following:
 
 change vscode to your gitconfig editor
 ---
-  - git config --global core.editor code 
+ ```git config --global core.editor code ``` 
    
 open vscode gitconfig editor
  ---
-  - git config --global --edit               
+```git config --global --edit ```               
 
 
 create an alias just like the example bellow
 
-##[alias]
----
-- s = !git status -s
-- c = !git commit -m
-- psh = !git push origin
-- pll = !git pull origin
-- check = !git checkout
-- create = !git checkout -b
-- l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s -%C(cyan)%cn, %C(green)%cr'
+```
+[user]
+	email = jandersonrodriguesir@gmail.com
+	name = JandersonSR
+[core]
+	editor = code
+[alias]
+	s = !git status -s
+	c = !git commit -m
+	psh = !git push origin
+	pll = !git pull origin
+	check = !git checkout
+	create = !git checkout -b
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s -%C(cyan)%cn, %C(green)%cr'
+```
 
 //*And know u have custom git commands, cheers ;)
 
