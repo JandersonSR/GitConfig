@@ -30,4 +30,5 @@ create an alias just like the example bellow
 ```
 
 //*And know u have custom git commands, cheers ;)
+
 ![image](https://user-images.githubusercontent.com/45982396/193343921-50788b7a-c75b-4086-a446-322dd92da9a0.png)
