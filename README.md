@@ -2,12 +2,13 @@
 
 
 
-Open your terminal and do the following: 
-// 1* *change vscode to your gitconfig editor
+Open your terminal and do the following:
+
+//change vscode to your gitconfig editor
 ---
   - git config --global core.editor code 
    
- //2* *open vscode gitconfig editor 
+//open vscode gitconfig editor 
  ---
   - git config --global --edit               
 
