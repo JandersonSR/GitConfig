@@ -12,8 +12,8 @@ open vscode gitconfig editor
  ---
   - git config --global --edit               
 
-//*create an alias just like the example bellow*/
 
+create an alias just like the example bellow
 ##[alias]
 ---
 - s = !git status -s
