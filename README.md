@@ -14,6 +14,7 @@ open vscode gitconfig editor
 
 
 create an alias just like the example bellow
+
 ##[alias]
 ---
 - s = !git status -s
