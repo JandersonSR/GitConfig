@@ -15,7 +15,7 @@ create an alias just like the example bellow
 
 ```
 [user]
-	email = jandersonrodriguesir@gmail.com
+	email = janderson@gmail.com
 	name = JandersonSR
 [core]
 	editor = code
