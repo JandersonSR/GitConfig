@@ -1,0 +1,176 @@
+Here’s a list of the main **Git** commands with examples and brief explanations:
+
+### 1. **`git init`**
+   Initializes a local Git repository.
+   ```bash
+   git init
+   ```
+   Creates a Git repository in the current directory.
+
+### 2. **`git clone <repo-url>`**
+   Clones a remote repository to the local machine.
+   ```bash
+   git clone https://github.com/user/project.git
+   ```
+   Downloads a remote repository to your computer.
+
+### 3. **`git status`**
+   Displays the status of the repository (modified, untracked, or staged files).
+   ```bash
+   git status
+   ```
+
+### 4. **`git add <file>`**
+   Adds files to the staging area (prepares them for a commit).
+   ```bash
+   git add file.txt
+   ```
+   To add all modified files:
+   ```bash
+   git add .
+   ```
+
+### 5. **`git commit -m "<message>"`**
+   Saves changes to the local repository with a descriptive message.
+   ```bash
+   git commit -m "Add new feature"
+   ```
+
+### 6. **`git log`**
+   Displays the commit history.
+   ```bash
+   git log
+   ```
+
+### 7. **`git diff`**
+   Shows differences between the current state and unstaged changes.
+   ```bash
+   git diff
+   ```
+
+### 8. **`git branch`**
+   Lists all local branches or creates a new one.
+   - To list branches:
+     ```bash
+     git branch
+     ```
+   - To create a new branch:
+     ```bash
+     git branch new-feature
+     ```
+
+### 9. **`git checkout <branch>`**
+   Switches to a specific branch.
+   ```bash
+   git checkout new-feature
+   ```
+   - To create and switch to a new branch:
+     ```bash
+     git checkout -b new-feature
+     ```
+
+### 10. **`git merge <branch>`**
+   Merges another branch into the current branch.
+   ```bash
+   git merge new-feature
+   ```
+   This merges the changes from the `new-feature` branch into the current branch.
+
+### 11. **`git pull`**
+   Updates the current branch with changes from the remote repository.
+   ```bash
+   git pull
+   ```
+   Or explicitly:
+   ```bash
+   git pull origin main
+   ```
+
+### 12. **`git push`**
+   Pushes local commits to the remote repository.
+   ```bash
+   git push origin main
+   ```
+
+### 13. **`git stash`**
+   Temporarily saves local changes that aren’t ready for a commit.
+   ```bash
+   git stash
+   ```
+   To recover the stash:
+   ```bash
+   git stash pop
+   ```
+
+### 14. **`git reset`**
+   Reverts changes in the local repository.
+   - To remove changes from the staging area:
+     ```bash
+     git reset file.txt
+     ```
+   - To discard commits:
+     ```bash
+     git reset --hard HEAD~1
+     ```
+
+### 15. **`git rm <file>`**
+   Removes a file and stages its removal for commit.
+   ```bash
+   git rm file.txt
+   ```
+
+### 16. **`git remote`**
+   Manages remote repositories.
+   - To add a remote repository:
+     ```bash
+     git remote add origin https://github.com/user/project.git
+     ```
+   - To list remote repositories:
+     ```bash
+     git remote -v
+     ```
+
+### 17. **`git fetch`**
+   Downloads changes from the remote repository without merging them.
+   ```bash
+   git fetch origin
+   ```
+
+### 18. **`git tag`**
+   Marks a specific point in the commit history.
+   - To create a tag:
+     ```bash
+     git tag v1.0
+     ```
+
+### 19. **`git rebase`**
+   Applies commits from the current branch onto another branch.
+   ```bash
+   git rebase main
+   ```
+
+### 20. **`git cherry-pick <commit-hash>`**
+   Applies a specific commit from one branch to another.
+   ```bash
+   git cherry-pick abc1234
+   ```
+
+### 21. **`git revert <commit-hash>`**
+   Creates a new commit that undoes the changes from a previous commit.
+   ```bash
+   git revert abc1234
+   ```
+
+### 22. **`git blame <file>`**
+   Shows who made changes to specific lines in a file.
+   ```bash
+   git blame file.txt
+   ```
+
+### 23. **`git clean`**
+   Removes untracked files from the working directory.
+   ```bash
+   git clean -f
+   ```
+
+These are the most common Git commands. If you need help with any of these, you can use the `git help <command>` for more details.
