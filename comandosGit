@@ -1,0 +1,176 @@
+Aqui está uma lista dos principais comandos do **Git** com exemplos e explicações breves:
+
+### 1. **`git init`**
+   Inicializa um repositório Git local.
+   ```bash
+   git init
+   ```
+   Cria um repositório Git no diretório atual.
+
+### 2. **`git clone <repo-url>`**
+   Clona um repositório remoto para o local.
+   ```bash
+   git clone https://github.com/usuario/projeto.git
+   ```
+   Faz o download de um repositório remoto para o seu computador.
+
+### 3. **`git status`**
+   Mostra o status do repositório (arquivos modificados, não rastreados, prontos para commit).
+   ```bash
+   git status
+   ```
+
+### 4. **`git add <arquivo>`**
+   Adiciona arquivos ao estágio (prepara para commit).
+   ```bash
+   git add arquivo.txt
+   ```
+   Para adicionar todos os arquivos modificados:
+   ```bash
+   git add .
+   ```
+
+### 5. **`git commit -m "<mensagem>"`**
+   Salva as mudanças do repositório local com uma mensagem descritiva.
+   ```bash
+   git commit -m "Adiciona nova funcionalidade"
+   ```
+
+### 6. **`git log`**
+   Exibe o histórico de commits.
+   ```bash
+   git log
+   ```
+
+### 7. **`git diff`**
+   Mostra as diferenças entre o estado atual do repositório e as mudanças não comitadas.
+   ```bash
+   git diff
+   ```
+
+### 8. **`git branch`**
+   Lista todas as branches locais ou cria uma nova branch.
+   - Para listar as branches:
+     ```bash
+     git branch
+     ```
+   - Para criar uma nova branch:
+     ```bash
+     git branch nova-feature
+     ```
+
+### 9. **`git checkout <branch>`**
+   Alterna para uma branch específica.
+   ```bash
+   git checkout nova-feature
+   ```
+   - Para criar e mudar para uma nova branch:
+     ```bash
+     git checkout -b nova-feature
+     ```
+
+### 10. **`git merge <branch>`**
+   Mescla outra branch na branch atual.
+   ```bash
+   git merge nova-feature
+   ```
+   Isso mescla as alterações da branch `nova-feature` na branch atual.
+
+### 11. **`git pull`**
+   Atualiza a branch atual com as mudanças do repositório remoto.
+   ```bash
+   git pull
+   ```
+   Ou explicitamente:
+   ```bash
+   git pull origin main
+   ```
+
+### 12. **`git push`**
+   Envia os commits locais para o repositório remoto.
+   ```bash
+   git push origin main
+   ```
+
+### 13. **`git stash`**
+   Armazena temporariamente as alterações locais que não estão prontas para commit.
+   ```bash
+   git stash
+   ```
+   Para recuperar o stash:
+   ```bash
+   git stash pop
+   ```
+
+### 14. **`git reset`**
+   Reverte mudanças no repositório local.
+   - Para remover mudanças de staging:
+     ```bash
+     git reset arquivo.txt
+     ```
+   - Para descartar commits:
+     ```bash
+     git reset --hard HEAD~1
+     ```
+
+### 15. **`git rm <arquivo>`**
+   Remove um arquivo e o adiciona ao stage para commit.
+   ```bash
+   git rm arquivo.txt
+   ```
+
+### 16. **`git remote`**
+   Gerencia repositórios remotos.
+   - Para adicionar um repositório remoto:
+     ```bash
+     git remote add origin https://github.com/usuario/projeto.git
+     ```
+   - Para listar os repositórios remotos:
+     ```bash
+     git remote -v
+     ```
+
+### 17. **`git fetch`**
+   Baixa as mudanças do repositório remoto sem mesclá-las.
+   ```bash
+   git fetch origin
+   ```
+
+### 18. **`git tag`**
+   Marca um ponto específico no histórico de commits.
+   - Para criar uma tag:
+     ```bash
+     git tag v1.0
+     ```
+
+### 19. **`git rebase`**
+   Aplica os commits da branch atual em outra branch.
+   ```bash
+   git rebase main
+   ```
+
+### 20. **`git cherry-pick <commit-hash>`**
+   Aplica um commit específico em outra branch.
+   ```bash
+   git cherry-pick abc1234
+   ```
+
+### 21. **`git revert <commit-hash>`**
+   Cria um novo commit que desfaz as mudanças de um commit anterior.
+   ```bash
+   git revert abc1234
+   ```
+
+### 22. **`git blame <arquivo>`**
+   Mostra quem fez alterações em linhas específicas de um arquivo.
+   ```bash
+   git blame arquivo.txt
+   ```
+
+### 23. **`git clean`**
+   Remove arquivos não rastreados do diretório de trabalho.
+   ```bash
+   git clean -f
+   ```
+
+Esses são os comandos mais comuns usados no Git. Se precisar de ajuda com qualquer um desses comandos, você pode usar o comando `git help <comando>` para mais informações.
